@@ -1,0 +1,33 @@
+.services {
+  padding-top: 800px;
+  position: relative;
+}
+.services .iamge-left {
+  position: absolute;
+  top: 600px;
+  left: 0;
+}
+.services .image-right {
+  position: absolute;
+  top: 1000px;
+  right: 0;
+}
+.services .services-content {
+  text-align: center;
+}
+.services .services-content h2 {
+  margin: 0;
+  font-size: 33px;
+}
+.services .services-content span{
+  color: #03a4ed;
+}
+.services .services-content span:last-child{
+  color: #ff8465;
+}
+.services .services-content h3 {
+  margin: 0;
+  font-size: 33px;
+  text-align: center;
+  color: #dd757559;
+}

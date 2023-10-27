@@ -1,0 +1,29 @@
+.banner{
+  height: 100%;
+  position: relative;
+}
+.banner .right{
+  position: absolute;
+  right: 0;
+  top: 66px;
+}
+.banner .left {
+  position: absolute;
+  left: 0;
+  top: 66px;
+}
+.banner .slider-conten {
+  position: absolute;
+  top: 300px;
+  padding-left: 23px;
+}
+.banner .slider-conten h1{
+  font-size: 50px;
+}
+.banner .slider-conten h1 span{
+  color: #03a4ed;
+}
+
+.banner .slider-conten p{
+  max-width: 500px;
+}
