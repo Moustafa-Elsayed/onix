@@ -1,12 +1,26 @@
-.banner{
+.banner {
   height: 100%;
   position: relative;
 }
-.banner .right{
+.banner .right {
   position: absolute;
   right: 0;
   top: 66px;
 }
+@media (max-width: 1024px) {
+  .banner .right {
+    position: absolute;
+    right: 0;
+    top: 66px;
+    width: 600px;
+  }
+}
+@media (max-width: 1023px) {
+  .banner .right {
+    display: none;
+  }
+}
+
 .banner .left {
   position: absolute;
   left: 0;
@@ -17,13 +31,31 @@
   top: 300px;
   padding-left: 23px;
 }
-.banner .slider-conten h1{
+@media (max-width: 1024px) {
+  .banner .slider-conten {
+    position: absolute;
+    top: 190px;
+    padding-left: 23px;
+  }
+}
+@media (max-width: 1023px) {
+  .banner .right {
+    display: none;
+  }
+  .banner .slider-conten {
+    position: absolute;
+    top: 190px;
+    padding-left: 23px;
+  }
+}
+
+.banner .slider-conten h1 {
   font-size: 50px;
 }
-.banner .slider-conten h1 span{
+.banner .slider-conten h1 span {
   color: #03a4ed;
 }
 
-.banner .slider-conten p{
+.banner .slider-conten p {
   max-width: 500px;
 }

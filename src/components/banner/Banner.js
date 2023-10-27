@@ -7,6 +7,7 @@ const Banner = () => {
     <div className="banner">
       <img className="right" src=".\images\banner-right-image.png" alt="" />
       <img className="left" src=".\images\baner-dec-left.png" alt=""/>
+
       <div className="slider-conten">
       <h1>
           build <span>your website</span>
@@ -26,6 +27,7 @@ const Banner = () => {
         >
           Message Us
         </Button>
+      
       </div>
     </div>
   );

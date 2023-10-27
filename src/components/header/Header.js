@@ -31,7 +31,9 @@ const Header = () => {
     <>
       <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography sx={{ cursor: "pointer" }}>
+          <Typography sx={{ cursor: "pointer" }} onClick={()=>{
+            navigate("/")
+          }}>
             <img src=".\images\logo.png" alt="" />
           </Typography>
 
