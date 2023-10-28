@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./about.css"
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <h1>about</h1>
     </div>
   )

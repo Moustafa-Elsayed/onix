@@ -175,10 +175,13 @@ const Header = () => {
               textAlign: "center",
               mb: 1,
               "&:hover": { backgroundColor: "#ff7662" },
+              backgroundColor: location.pathname === "/" ? " #03a4ed" : null,
+
             }}
             onClick={() => {
               setClose("permanent");
               setOpen("none");
+              navigate("/")
             }}
           >
             <ListItemText className="drawer-links" primary="Home" />
@@ -189,10 +192,14 @@ const Header = () => {
               textAlign: "center",
               mb: 1,
               "&:hover": { backgroundColor: "#ff7662" },
+              backgroundColor: location.pathname === "/about" ? " #03a4ed" : null,
+
             }}
             onClick={() => {
               setClose("permanent");
               setOpen("none");
+              navigate("/about")
+
             }}
           >
             <ListItemText primary="About" />
@@ -202,10 +209,14 @@ const Header = () => {
               textAlign: "center",
               mb: 1,
               "&:hover": { backgroundColor: "#ff7662" },
+              backgroundColor: location.pathname === "/contact" ? " #03a4ed" : null,
+
             }}
             onClick={() => {
               setClose("permanent");
               setOpen("none");
+              navigate("/contact")
+
             }}
           >
             <ListItemText primary="Contact" />

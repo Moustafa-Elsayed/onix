@@ -2,14 +2,15 @@ import React from "react";
 import "./banner.css";
 import "swiper/css";
 import Button from "@mui/material/Button";
+
 const Banner = () => {
   return (
-    <div className="banner">
-      <img className="right" src=".\images\banner-right-image.png" alt="" />
-      <img className="left" src=".\images\baner-dec-left.png" alt=""/>
-
+    <>
+      <div className="banner">
+        <img className="left" src=".\images\baner-dec-left.png" alt="" />
+        <img className="right" src=".\images\banner-right-image.png" alt="" />
       <div className="slider-conten">
-      <h1>
+        <h1>
           build <span>your website</span>
         </h1>
         <p>
@@ -27,9 +28,9 @@ const Banner = () => {
         >
           Message Us
         </Button>
-      
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

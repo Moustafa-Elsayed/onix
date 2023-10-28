@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../../components/banner/Banner";
 import Services from "../services/Services";
-import Contact from "../Contact";
 import { Container } from "@mui/material";
+import Banner from "../../components/banner/Banner";
+import Project from "../projects/Project";
 
 const Home = () => {
   return (
@@ -10,9 +10,8 @@ const Home = () => {
       <Banner />
       <Container>
         <Services />
-      <Contact />
+        <Project />
       </Container>
-
     </>
   );
 };
