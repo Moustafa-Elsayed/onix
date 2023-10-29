@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 const ServicesSwiper = () => {
   return (
     <Swiper
-    slidesPerView={1}
+    slidesPerView={0}
     spaceBetween={10}
     pagination={{
       clickable: true,
@@ -24,11 +24,11 @@ const ServicesSwiper = () => {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView:3 ,
-        spaceBetween: 50,
+        spaceBetween: 10,
       },
     }}
     modules={[Pagination,Autoplay]}

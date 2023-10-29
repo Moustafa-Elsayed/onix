@@ -29,14 +29,14 @@ const Project = () => {
                   <p>Lorem ipsum dolor sitti amet, consectetur.</p>
                 </div>
                 <div className="content">
-                  <img src=".\images\service-icon-01.png" alt="" />
+                  <img src=".\images\service-icon-02.png" alt="" />
                   <h2>320</h2>
                   <p className="first">SEO Projects</p>
                   <hr />
                   <p>Lorem ipsum dolor sitti amet, consectetur.</p>
                 </div>
                 <div className="content">
-                  <img src=".\images\service-icon-01.png" alt="" />
+                  <img src=".\images\service-icon-03.png" alt="" />
                   <h2>320</h2>
                   <p className="first">SEO Projects</p>
                   <hr />

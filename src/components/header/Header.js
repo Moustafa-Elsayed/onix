@@ -231,6 +231,7 @@ const Header = () => {
             onClick={() => {
               setClose("permanent");
               setOpen("none");
+
             }}
           >
             Contact Us Now

@@ -1,7 +1,8 @@
 .services {
   position: relative;
-  border: 1px solid red;
   position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .services .iamge-left {
   position: absolute;
