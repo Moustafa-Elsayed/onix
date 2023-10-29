@@ -26,9 +26,17 @@ margin: 0 auto;}
 }
 .plans .card-content{
   border-radius: 20px;
+  z-index: 1111;
+  background-image: url("C:\Users\Mostafa\Desktop\onix\public\images\second-plan-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
+
 .plans .img-left{
   position: absolute;
   top: -100px;
   left: -100px;
+  z-index: -1;
 }
