@@ -24,10 +24,12 @@ margin: 0;}
 }
 .portoflio .mySwiper{
   height: 100%;
+
 }
 
 .portoflio .mySwiper img{
   height: 100%;
+  max-width: 100%;
   border-radius: 30px;
 }
 .portoflio .image-port{

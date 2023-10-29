@@ -5,8 +5,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Plans = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <div className="plans">
       <div className="plans-content">
@@ -18,6 +23,9 @@ const Plans = () => {
       </div>
       <Grid container spacing={10}>
         <Grid
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
           xs={12}
           sm={6}
           md={4}
@@ -29,7 +37,7 @@ const Plans = () => {
         >
           <Card
             className="card-content"
-            sx={{  maxWidth: { xs: "100%", md: "345px" } }}
+            sx={{ maxWidth: { xs: "100%", md: "345px" } }}
             elevation={10}
           >
             <CardContent
@@ -37,8 +45,7 @@ const Plans = () => {
                 maxWidth: "500px",
                 paddingBottom: "30px",
                 paddingTop: "30px",
-                zIndex:"66666666666"
-                
+                zIndex: "66666666666",
               }}
             >
               <Typography gutterBottom variant="h5">
@@ -99,10 +106,10 @@ const Plans = () => {
                 variant="text"
                 disableElevation
                 sx={{
-                  backgroundColor: "#ff8465",
+                  backgroundColor: "#03a4ed",
                   color: "black",
                   marginLeft: "10px",
-                  "&:hover": { backgroundColor: "#03a4ed" },
+                  "&:hover": { backgroundColor: "#ff8465" },
                   borderRadius: "10px",
                 }}
               >
@@ -112,6 +119,9 @@ const Plans = () => {
           </Card>
         </Grid>
         <Grid
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="5000"
           xs={12}
           sm={6}
           md={4}
@@ -191,10 +201,10 @@ const Plans = () => {
                 variant="text"
                 disableElevation
                 sx={{
-                  backgroundColor: "#ff8465",
+                  backgroundColor: "#03a4ed",
                   color: "black",
                   marginLeft: "10px",
-                  "&:hover": { backgroundColor: "#03a4ed" },
+                  "&:hover": { backgroundColor: "#ff8465" },
                   borderRadius: "10px",
                 }}
               >
@@ -204,6 +214,9 @@ const Plans = () => {
           </Card>
         </Grid>
         <Grid
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="9000"
           xs={12}
           sm={6}
           md={4}
@@ -283,10 +296,10 @@ const Plans = () => {
                 variant="text"
                 disableElevation
                 sx={{
-                  backgroundColor: "#ff8465",
+                  backgroundColor: "#03a4ed",
                   color: "black",
                   marginLeft: "10px",
-                  "&:hover": { backgroundColor: "#03a4ed" },
+                  "&:hover": { backgroundColor: "#ff8465" },
                   borderRadius: "10px",
                 }}
               >

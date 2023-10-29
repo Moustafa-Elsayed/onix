@@ -2,15 +2,22 @@ import React from "react";
 import "./banner.css";
 import "swiper/css";
 import Button from "@mui/material/Button";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Banner = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <div className="banner">
         <img className="left" src=".\images\baner-dec-left.png" alt="" />
         <img className="right" src=".\images\banner-right-image.png" alt="" />
-      <div className="slider-conten">
-        <h1>
+      <div className="slider-conten" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <h1 >
           build <span>your website</span>
         </h1>
         <p>

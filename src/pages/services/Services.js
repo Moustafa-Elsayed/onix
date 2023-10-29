@@ -1,16 +1,23 @@
 import React from "react";
 import "./services.css";
 import ServicesSwiper from "./ServicesSwiper";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="services">
-      <div className="services-content">
-        <h2>
+      <div className="services-content" >
+        <h2 data-aos="flip-up">
           We <span>Provide</span> The Best <br /> Service With
           <span> Our Tools</span>
         </h2>
-          <h3>our services</h3>
-      </div>
+          <h3 data-aos="zoom-in" >our services</h3>
+      </div> 
       <ServicesSwiper />
       
       <div className="slider"></div>
