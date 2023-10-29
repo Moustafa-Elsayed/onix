@@ -121,7 +121,7 @@ const Plans = () => {
         <Grid
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="5000"
+          data-aos-duration="2000"
           xs={12}
           sm={6}
           md={4}
@@ -216,7 +216,7 @@ const Plans = () => {
         <Grid
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="9000"
+          data-aos-duration="2000"
           xs={12}
           sm={6}
           md={4}

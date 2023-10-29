@@ -17,9 +17,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Header = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   const navigate = useNavigate();
   const location=useLocation();
   const [open, setOpen] = useState("none");
@@ -134,6 +139,7 @@ const Header = () => {
       </AppBar>
       {/* start Drawer */}
       <Drawer
+      
         open={true}
         onClose={() => {
           setClose("permanent");
