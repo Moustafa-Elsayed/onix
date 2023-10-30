@@ -7,7 +7,10 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CheckIcon from "@mui/icons-material/Check";
+import ClearIcon from "@mui/icons-material/Clear";
 import { useEffect } from "react";
+
 const Plans = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
@@ -74,13 +77,16 @@ const Plans = () => {
               >
                 $140
               </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ marginBottom: "20px" }}
-              >
-                10 Projects
-              </Typography>
+              <div className="line">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ marginBottom: "20px" }}
+                >
+                  10 Projects
+                </Typography>
+              </div>
+
               <Typography
                 variant="body2"
                 color="text.secondary"
@@ -100,7 +106,7 @@ const Plans = () => {
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                Basic Support
+                 Basic Support
               </Typography>
               <Button
                 variant="text"

@@ -5,6 +5,7 @@ import Banner from "../../components/banner/Banner";
 import Project from "../projects/Project";
 import Portoflio from "../portoflio/Portoflio";
 import Plans from "../plans/Plans";
+import Subscribe from "../subscribe/Subscribe";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Project />
         <Portoflio />
         <Plans />
+        <Subscribe />
       </Container>
     </>
   );
