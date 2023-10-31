@@ -48,10 +48,11 @@ const Header = () => {
       <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <motion.Typography
+          className="logo"
           initial={{y:-250}}
           animate={{y:-3}}
           transition={{delay:0.2, type:"spring", stiffness:50}}
-            sx={{ cursor: "pointer" }}
+            
             onClick={() => {
               navigate("/");
             }}

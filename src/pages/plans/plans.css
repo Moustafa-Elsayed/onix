@@ -5,7 +5,9 @@
   position: relative;
 }
 .plans .plans-content {
-margin: 0 auto;}
+margin: 0 auto;
+margin-bottom: 20px;
+}
 .plans .plans-content h2{
   font-size: 33px;
   color: black;

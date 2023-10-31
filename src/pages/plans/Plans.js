@@ -5,15 +5,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 import { motion } from "framer-motion";
 
 const Plans = () => {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
+
   return (
     <div className="plans">
       <div className="plans-content">
@@ -25,9 +21,7 @@ const Plans = () => {
       </div>
       <Grid container spacing={10}>
         <Grid
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+      
           xs={12}
           sm={6}
           md={4}
@@ -136,9 +130,7 @@ const Plans = () => {
           </Card>
         </Grid>
         <Grid
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          
           xs={12}
           sm={6}
           md={4}
@@ -237,9 +229,7 @@ const Plans = () => {
           </Card>
         </Grid>
         <Grid
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+        
           xs={12}
           sm={6}
           md={4}
