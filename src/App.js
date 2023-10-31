@@ -8,8 +8,8 @@ import {
 import Root from "./pages/root/Root";
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
+import Contact from "./pages/contact/Contact";
 
-import Contact from "./pages/Contact";
 import Notfound from "./pages/notfound/Notfound";
 function App() {
   const router = createBrowserRouter(
