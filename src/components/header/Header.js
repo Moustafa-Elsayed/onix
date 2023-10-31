@@ -33,7 +33,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 2000 });
   }, []);
   const navigate = useNavigate();
   const location = useLocation();
@@ -146,7 +146,7 @@ const Header = () => {
                   "&:hover": { backgroundColor: "#03a4ed" },
                 }}
                 onClick={() => {
-                  navigate("/contactus");
+                  navigate("/contact");
                 }}
                 disableElevation
               >

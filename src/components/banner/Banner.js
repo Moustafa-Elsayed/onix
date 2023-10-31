@@ -6,10 +6,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
+
   }, []);
+  const navigate=useNavigate();
   return (
     <>
       <div className="banner">
@@ -38,6 +42,9 @@ const Banner = () => {
             backgroundColor: "#ff8465",
             color: "black",
             "&:hover": { backgroundColor: "#03a4ed" },
+          }}
+          onClick={()=>{
+            navigate("/contact");
           }}
         >
           Message Us
