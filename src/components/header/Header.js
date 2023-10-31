@@ -39,7 +39,7 @@ const Header = () => {
   const location = useLocation();
   const [open, setOpen] = useState("none");
   // const [isCollapde, setisCollapde] = useState(false);
-  const [ope, setOpe] = useState(true);
+  const [ope, setOpe] = useState(false);
 
   const [close, setClose] = useState("permanent");
 
@@ -231,6 +231,7 @@ const Header = () => {
                     setClose("permanent");
                     setOpen("none");
                     navigate("/");
+                    setOpe(!ope);
                   }}
                 />
               </ListItemButton>
