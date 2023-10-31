@@ -36,3 +36,16 @@ margin: 0;}
 position: absolute;
 top: 0;
 }
+.portoflio .swip{
+position: relative;
+cursor: pointer;
+}
+.portoflio .swip .di{
+  position: absolute;
+  display: none;
+  background: #f3cfcf;
+  color: white;
+}
+.portoflio .swip:hover .di{
+  display: block;
+}

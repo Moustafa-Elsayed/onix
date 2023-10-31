@@ -9,7 +9,7 @@ import {
   ListItemText,
   AppBar,
   Toolbar,
-  Typography,
+  
 } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -26,9 +26,10 @@ import { useLocation } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import HomeIcon from '@mui/icons-material/Home';
-import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
-import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
+import HomeIcon from "@mui/icons-material/Home";
+import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
+import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
+import { motion } from "framer-motion";
 
 const Header = () => {
   useEffect(() => {
@@ -46,18 +47,22 @@ const Header = () => {
     <>
       <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography
+          <motion.Typography
+          initial={{y:-250}}
+          animate={{y:-3}}
+          transition={{delay:0.2, type:"spring", stiffness:50}}
             sx={{ cursor: "pointer" }}
             onClick={() => {
               navigate("/");
             }}
           >
             <img src=".\images\logo.png" alt="" />
-          </Typography>
+          </motion.Typography>
 
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             <Box sx={{ display: "flex", marginRight: "60px" }}>
               <ListItemButton
+              
                 onClick={() => {
                   navigate("/");
                 }}
@@ -81,8 +86,9 @@ const Header = () => {
                   }}
                 />
               </ListItemButton>
-              
+
               <ListItemButton
+              
                 sx={{
                   "&:hover": { color: "red", backgroundColor: "transparent" },
 
@@ -203,9 +209,9 @@ const Header = () => {
               setOpe(!ope);
             }}
           >
-             <ListItemIcon>
-            <HomeIcon sx={{color:"blue"}}/>
-          </ListItemIcon>
+            <ListItemIcon>
+              <HomeIcon sx={{ color: "blue" }} />
+            </ListItemIcon>
             <ListItemText className="drawer-links" primary="Home" />
             {ope ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
@@ -217,7 +223,7 @@ const Header = () => {
             >
               <ListItemButton sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <StarBorder sx={{color:"red"}}/>
+                  <StarBorder sx={{ color: "red" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="Main Home"
@@ -246,8 +252,8 @@ const Header = () => {
             }}
           >
             <ListItemIcon>
-            <DashboardCustomizeIcon sx={{color:"blue"}} />
-          </ListItemIcon>
+              <DashboardCustomizeIcon sx={{ color: "blue" }} />
+            </ListItemIcon>
             <ListItemText primary="About" />
           </ListItemButton>
           <ListItemButton
@@ -265,8 +271,8 @@ const Header = () => {
             }}
           >
             <ListItemIcon>
-            <PermContactCalendarIcon sx={{color:"blue"}}/>
-          </ListItemIcon>
+              <PermContactCalendarIcon sx={{ color: "blue" }} />
+            </ListItemIcon>
             <ListItemText primary="Contact" />
           </ListItemButton>
 

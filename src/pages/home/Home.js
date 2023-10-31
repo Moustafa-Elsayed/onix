@@ -7,6 +7,7 @@ import Portoflio from "../portoflio/Portoflio";
 import Plans from "../plans/Plans";
 import Subscribe from "../subscribe/Subscribe";
 import CardSwipper from "../../components/cardswipper/CardSwipper";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Plans />
         <CardSwipper />
         <Subscribe />
+      <Footer />
       </Container>
     </>
   );

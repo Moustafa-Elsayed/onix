@@ -16,8 +16,8 @@ const Portoflio = () => {
   }, []);
   return (
     <div className="portoflio">
-      <div className="portoflio-content"  data-aos="flip-left">
-        <h2 >
+      <div className="portoflio-content" data-aos="flip-left">
+        <h2>
           Our Recent <em>Projects</em> & Case <br /> Studies
           <span>For Clients</span>
         </h2>
@@ -51,8 +51,12 @@ const Portoflio = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="swip">
           <img src=".\images\portfolio-01.jpg" alt="" />
+          <div className="di">
+            <h5>brawjm</h5>
+            <p>kajs;ja;ksja;jsa;s</p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src=".\images\portfolio-02.jpg" alt="" />
