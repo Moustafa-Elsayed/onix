@@ -14,21 +14,31 @@ import {
 import LoginIcon from "@mui/icons-material/Login";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import List from "@mui/material/List";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Collapse from "@mui/material/Collapse";
+import StarBorder from "@mui/icons-material/StarBorder";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import HomeIcon from '@mui/icons-material/Home';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 
 const Header = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
   const navigate = useNavigate();
-  const location=useLocation();
+  const location = useLocation();
   const [open, setOpen] = useState("none");
   // const [isCollapde, setisCollapde] = useState(false);
+  const [ope, setOpe] = useState(true);
 
   const [close, setClose] = useState("permanent");
 
@@ -36,9 +46,12 @@ const Header = () => {
     <>
       <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography sx={{ cursor: "pointer" }} onClick={()=>{
-            navigate("/")
-          }}>
+          <Typography
+            sx={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <img src=".\images\logo.png" alt="" />
           </Typography>
 
@@ -47,13 +60,12 @@ const Header = () => {
               <ListItemButton
                 onClick={() => {
                   navigate("/");
-
                 }}
                 sx={{
                   "&:hover": { color: "red", backgroundColor: "transparent" },
 
-                  borderBottom: location.pathname === "/" ? "1px solid #03a4ed" : null,
-
+                  borderBottom:
+                    location.pathname === "/" ? "1px solid #03a4ed" : null,
                 }}
               >
                 <ListItemText
@@ -69,12 +81,13 @@ const Header = () => {
                   }}
                 />
               </ListItemButton>
+              
               <ListItemButton
                 sx={{
                   "&:hover": { color: "red", backgroundColor: "transparent" },
-                  
-                  borderBottom: location.pathname === "/about" ? "1px solid #03a4ed" : null,
 
+                  borderBottom:
+                    location.pathname === "/about" ? "1px solid #03a4ed" : null,
                 }}
                 onClick={() => {
                   navigate("about");
@@ -93,8 +106,10 @@ const Header = () => {
                 sx={{
                   "&:hover": { color: "red", backgroundColor: "transparent" },
 
-                  borderBottom: location.pathname === "/contact" ? "1px solid #03a4ed" : null,
-
+                  borderBottom:
+                    location.pathname === "/contact"
+                      ? "1px solid #03a4ed"
+                      : null,
                 }}
                 onClick={() => {
                   navigate("contact");
@@ -114,11 +129,11 @@ const Header = () => {
                 sx={{
                   backgroundColor: "#ff8465",
                   color: "black",
-                  marginLeft:"10px",
+                  marginLeft: "10px",
                   "&:hover": { backgroundColor: "#03a4ed" },
                 }}
                 onClick={() => {
-                  navigate("/contactus")
+                  navigate("/contactus");
                 }}
                 disableElevation
               >
@@ -132,14 +147,12 @@ const Header = () => {
               setClose("temporary");
               setOpen("block");
             }}
-            sx={{ display: { xs: "block", md: "none" },color:"#ff7662",
-          }}
+            sx={{ display: { xs: "block", md: "none" }, color: "#ff7662" }}
           />
         </Toolbar>
       </AppBar>
       {/* start Drawer */}
       <Drawer
-      
         open={true}
         onClose={() => {
           setClose("permanent");
@@ -166,7 +179,7 @@ const Header = () => {
           sx={{
             position: "absolute",
             right: 13,
-            color:"#ff7662",
+            color: "#ff7662",
             top: 13,
             zIndex: "555",
             cursor: "pointer",
@@ -182,32 +195,59 @@ const Header = () => {
               mb: 1,
               "&:hover": { backgroundColor: "#ff7662" },
               backgroundColor: location.pathname === "/" ? " #03a4ed" : null,
-
             }}
             onClick={() => {
-              setClose("permanent");
-              setOpen("none");
-              navigate("/")
+              // setClose("permanent");
+              // setOpen("none");
+              // navigate("/");
+              setOpe(!ope);
             }}
           >
+             <ListItemIcon>
+            <HomeIcon sx={{color:"blue"}}/>
+          </ListItemIcon>
             <ListItemText className="drawer-links" primary="Home" />
+            {ope ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
+          <Collapse in={ope} timeout="auto" unmountOnExit>
+            <List
+              component="div"
+              disablePadding
+              sx={{ justifyContent: "space-between" }}
+            >
+              <ListItemButton sx={{ pl: 4 }}>
+                <ListItemIcon>
+                  <StarBorder sx={{color:"red"}}/>
+                </ListItemIcon>
+                <ListItemText
+                  primary="Main Home"
+                  onClick={() => {
+                    setClose("permanent");
+                    setOpen("none");
+                    navigate("/");
+                  }}
+                />
+              </ListItemButton>
+            </List>
+          </Collapse>
 
           <ListItemButton
             sx={{
               textAlign: "center",
               mb: 1,
               "&:hover": { backgroundColor: "#ff7662" },
-              backgroundColor: location.pathname === "/about" ? " #03a4ed" : null,
-
+              backgroundColor:
+                location.pathname === "/about" ? " #03a4ed" : null,
             }}
             onClick={() => {
               setClose("permanent");
               setOpen("none");
-              navigate("/about")
-
+              navigate("/about");
             }}
           >
+            <ListItemIcon>
+            <DashboardCustomizeIcon sx={{color:"blue"}} />
+          </ListItemIcon>
             <ListItemText primary="About" />
           </ListItemButton>
           <ListItemButton
@@ -215,21 +255,27 @@ const Header = () => {
               textAlign: "center",
               mb: 1,
               "&:hover": { backgroundColor: "#ff7662" },
-              backgroundColor: location.pathname === "/contact" ? " #03a4ed" : null,
-
+              backgroundColor:
+                location.pathname === "/contact" ? " #03a4ed" : null,
             }}
             onClick={() => {
               setClose("permanent");
               setOpen("none");
-              navigate("/contact")
-
+              navigate("/contact");
             }}
           >
+            <ListItemIcon>
+            <PermContactCalendarIcon sx={{color:"blue"}}/>
+          </ListItemIcon>
             <ListItemText primary="Contact" />
           </ListItemButton>
 
           <Button
-            sx={{ textAlign: "center", mb: 1,"&:hover": { backgroundColor: "#1976d2" }, }}
+            sx={{
+              textAlign: "center",
+              mb: 1,
+              "&:hover": { backgroundColor: "#1976d2" },
+            }}
             fullWidth
             startIcon={<LoginIcon />}
             variant="outlined"
@@ -237,7 +283,6 @@ const Header = () => {
             onClick={() => {
               setClose("permanent");
               setOpen("none");
-
             }}
           >
             Contact Us Now
