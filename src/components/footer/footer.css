@@ -40,3 +40,7 @@ hr {
 .footer .final-content span {
   color: #f3cfcf;
 }
+.footer .final-content em {
+  font-style: normal;
+  color: #03a4ed;
+}

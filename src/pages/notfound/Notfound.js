@@ -16,7 +16,14 @@ const Notfound = () => {
     
     >
       <img src=".\images\notfound.jpg" alt="" />
-      <Button variant="contained"  
+      <Button 
+      component={motion.div}
+      whileHover={{
+        scale: 1.1,
+        transition: { duration: 0.3 },
+      }}
+      whileTap={{ scale: 0.9 }}
+      variant="contained"  
       onClick={()=>{
         navigate("/")
       }} sx={{

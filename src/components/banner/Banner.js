@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 const Banner = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -27,6 +28,12 @@ const Banner = () => {
           cumque aliquid maxime!
         </p>
         <Button
+        component={motion.div}
+        whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.3 },
+        }}
+        whileTap={{ scale: 0.9 }}
           sx={{
             backgroundColor: "#ff8465",
             color: "black",

@@ -61,8 +61,8 @@ const Footer = () => {
       </Grid>
       <hr />
       <h3 className="final-content">
-        Copyright © 2021 Onix Digital Co., Ltd. All Rights Reserved. <br /> Designed by{" "}
-        <span>TemplateMo</span>
+        Copyright © 2023 Onix Digital Co., Ltd. All Rights Reserved. <br /> Designed by <em>Mostafa-ELsayed</em>
+        <span> from TemplateMo</span>
       </h3>
     </div>
   );

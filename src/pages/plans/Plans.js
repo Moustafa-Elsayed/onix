@@ -7,9 +7,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import CheckIcon from "@mui/icons-material/Check";
-import ClearIcon from "@mui/icons-material/Clear";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Plans = () => {
   useEffect(() => {
@@ -39,6 +38,12 @@ const Plans = () => {
           item
         >
           <Card
+            component={motion.div}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
             className="card-content"
             sx={{ maxWidth: { xs: "100%", md: "345px" } }}
             elevation={10}
@@ -106,9 +111,15 @@ const Plans = () => {
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                 Basic Support
+                Basic Support
               </Typography>
               <Button
+                component={motion.div}
+                whileHover={{
+                  scale: 1.2,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.9 }}
                 variant="text"
                 disableElevation
                 sx={{
@@ -138,6 +149,12 @@ const Plans = () => {
           item
         >
           <Card
+            component={motion.div}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
             className="card-content"
             sx={{ zIndex: "22", maxWidth: { xs: "100%", md: "345px" } }}
             elevation={10}
@@ -233,6 +250,12 @@ const Plans = () => {
           item
         >
           <Card
+            component={motion.div}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.9 }}
             className="card-content"
             sx={{ zIndex: "22", maxWidth: { xs: "100%", md: "345px" } }}
             elevation={10}

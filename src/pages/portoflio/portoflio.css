@@ -1,51 +1,60 @@
-.portoflio{
+.portoflio {
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.portoflio .portoflio-content{
+.portoflio .portoflio-content {
   text-align: center;
 }
-.portoflio .portoflio-content h2{
+.portoflio .portoflio-content h2 {
   font-size: 33px;
-margin: 0;}
-.portoflio .portoflio-content em{
+  margin: 0;
+}
+.portoflio .portoflio-content em {
   color: #03a4ed;
   font-style: normal;
 }
-.portoflio .portoflio-content span{
+.portoflio .portoflio-content span {
   color: #ff8465;
 }
-.portoflio .portoflio-content h3{
-  margin:0;
+.portoflio .portoflio-content h3 {
+  margin: 0;
   margin-top: 10px;
   font-size: 25px;
   color: #f3cfcf;
 }
-.portoflio .mySwiper{
+.portoflio .mySwiper {
   height: 100%;
-
 }
 
-.portoflio .mySwiper img{
+.portoflio .mySwiper img {
   height: 100%;
   max-width: 100%;
   border-radius: 30px;
 }
-.portoflio .image-port{
-position: absolute;
-top: 0;
+.portoflio .image-port {
+  position: absolute;
+  top: 0;
 }
-.portoflio .swip{
-position: relative;
-cursor: pointer;
+.portoflio .swip {
+  position: relative;
+  cursor: pointer;
 }
-.portoflio .swip .di{
+.portoflio .swip .di {
   position: absolute;
   display: none;
-  background: #f3cfcf;
-  color: white;
+  background-image: url("C:\Users\Mostafa\Desktop\onix\public\images\hover-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 20px;
+  padding: 50px;
+  border-top-left-radius: 20px;
 }
-.portoflio .swip:hover .di{
+.portoflio .swip .di p {
+  color: rgb(114, 111, 111);
+  font-size: 20px;
+}
+.portoflio .swip:hover .di {
   display: block;
 }

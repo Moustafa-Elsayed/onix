@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
@@ -53,9 +54,15 @@ const Portoflio = () => {
       >
         <SwiperSlide className="swip">
           <img src=".\images\portfolio-01.jpg" alt="" />
-          <div className="di">
-            <h5>brawjm</h5>
-            <p>kajs;ja;ksja;jsa;s</p>
+          <div
+            className="di"
+            component={motion.div}
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.1, type: "spring", stiffness: 50 }}
+          >
+            <h3>project ten</h3>
+            <p>SEO Development</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
