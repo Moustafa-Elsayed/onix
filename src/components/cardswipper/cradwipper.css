@@ -1,0 +1,43 @@
+.swipers {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slides:nth-child(1n) {
+  background-image:url("C:\Users\Mostafa\Desktop\onix\public\images\portfolio-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slides:nth-child(2n) {
+  background-image:url("C:\Users\Mostafa\Desktop\onix\public\images\portfolio-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slides:nth-child(3n) {
+  background-image:url("C:\Users\Mostafa\Desktop\onix\public\images\portfolio-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slides:nth-child(4n) {
+  background-image:url("C:\Users\Mostafa\Desktop\onix\public\images\portfolio-04.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

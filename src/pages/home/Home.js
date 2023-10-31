@@ -6,6 +6,7 @@ import Project from "../projects/Project";
 import Portoflio from "../portoflio/Portoflio";
 import Plans from "../plans/Plans";
 import Subscribe from "../subscribe/Subscribe";
+import CardSwipper from "../../components/cardswipper/CardSwipper";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Project />
         <Portoflio />
         <Plans />
+        <CardSwipper />
         <Subscribe />
       </Container>
     </>
