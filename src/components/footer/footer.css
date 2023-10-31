@@ -1,10 +1,32 @@
 .footer{
-  border: 1px solid red;
-  padding-top:50px ;
+  padding-top:100px ;
   padding-bottom: 50px;
-
+  position: relative;
+}
+.footer .footer-img{
+  position: absolute;
+  top: 0;
+  right: -103px;
 }
 .footer .links{
   display: flex;
   flex-direction: column;
+}
+.footer .links {
+  color: rgb(117, 115, 115);
+}
+.footer .links:hover {
+  color: #f3cfcf;
+}
+hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer .final-content{
+  color: rgb(117, 115, 115);
+  text-align: center;
+}
+.footer .final-content span{
+  color: #f3cfcf;
+
 }
