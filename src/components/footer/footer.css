@@ -2,11 +2,12 @@
   padding-top: 100px;
   padding-bottom: 50px;
   position: relative;
+  overflow: hidden;
 }
 .footer .footer-img {
   position: absolute;
   top: 0;
-  right: -103px;
+  right: -96px;
   z-index: -1;
 }
 .footer .links-content{

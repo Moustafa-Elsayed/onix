@@ -13,6 +13,7 @@
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
+
 }
 .subscribe img {
   position: absolute;
@@ -22,4 +23,31 @@
 .subscribe h2 {
   color: white;
   font-size: 30px;
+  z-index: 22;
+  text-align: center;
+}
+form{
+  padding: 10px;
+}
+input{
+  outline: none;
+  border: none;
+  padding: 20px;
+}
+@media (max-width:489px){
+  input{
+    outline: none;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  form{
+    padding: 10px;
+    text-align: center;
+  }
+}
+input:last-child{
+  border-left: 1px solid gray;
+
 }
