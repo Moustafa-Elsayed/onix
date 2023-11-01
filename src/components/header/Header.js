@@ -9,7 +9,7 @@ import {
   ListItemText,
   AppBar,
   Toolbar,
-  
+  Typography,
 } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -47,23 +47,22 @@ const Header = () => {
     <>
       <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <motion.Typography
-          className="logo"
-          initial={{y:-250}}
-          animate={{y:-3}}
-          transition={{delay:0.2, type:"spring", stiffness:50}}
-            
+          <Typography
+            component={motion.div}
+            className="logo"
+            initial={{ y: -250 }}
+            animate={{ y: -3 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 50 }}
             onClick={() => {
               navigate("/");
             }}
           >
             <img src=".\images\logo.png" alt="" />
-          </motion.Typography>
+          </Typography>
 
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             <Box sx={{ display: "flex", marginRight: "60px" }}>
               <ListItemButton
-              
                 onClick={() => {
                   navigate("/");
                 }}
@@ -89,7 +88,6 @@ const Header = () => {
               </ListItemButton>
 
               <ListItemButton
-              
                 sx={{
                   "&:hover": { color: "red", backgroundColor: "transparent" },
 
@@ -133,12 +131,12 @@ const Header = () => {
               </ListItemButton>
 
               <Button
-              component={motion.div}
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-              whileTap={{ scale: 0.9 }}
+                component={motion.div}
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.9 }}
                 sx={{
                   backgroundColor: "#ff8465",
                   color: "black",
@@ -219,7 +217,11 @@ const Header = () => {
             <ListItemIcon>
               <HomeIcon sx={{ color: "blue" }} />
             </ListItemIcon>
-            <ListItemText className="drawer-links" primary="Home" sx={{paddingLeft:"21px"}} />
+            <ListItemText
+              className="drawer-links"
+              primary="Home"
+              sx={{ paddingLeft: "21px" }}
+            />
             {ope ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={ope} timeout="auto" unmountOnExit>
@@ -297,7 +299,7 @@ const Header = () => {
             onClick={() => {
               setClose("permanent");
               setOpen("none");
-              navigate("/message")
+              navigate("/message");
             }}
           >
             Message Us Now
