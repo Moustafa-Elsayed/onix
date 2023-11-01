@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
 
   }, []);
   const navigate=useNavigate();
