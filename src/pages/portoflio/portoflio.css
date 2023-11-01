@@ -39,22 +39,25 @@
 .portoflio .swip {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .portoflio .swip .di {
   position: absolute;
-  display: none;
+  bottom: -100px;
   background-image: url("C:\Users\Mostafa\Desktop\onix\public\images\hover-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  right: 20px;
-  padding: 50px;
+  padding: 60px;
   border-top-left-radius: 20px;
+  transition: transform 0.3s;
 }
+
 .portoflio .swip .di p {
   color: rgb(114, 111, 111);
   font-size: 20px;
 }
 .portoflio .swip:hover .di {
   display: block;
+  transform: translateY(-60%);
 }

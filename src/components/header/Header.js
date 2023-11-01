@@ -219,7 +219,7 @@ const Header = () => {
             <ListItemIcon>
               <HomeIcon sx={{ color: "blue" }} />
             </ListItemIcon>
-            <ListItemText className="drawer-links" primary="Home" />
+            <ListItemText className="drawer-links" primary="Home" sx={{paddingLeft:"21px"}} />
             {ope ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={ope} timeout="auto" unmountOnExit>

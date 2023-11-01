@@ -7,8 +7,7 @@ import "swiper/css/navigation";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
-
+// import { motion } from "framer-motion";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Portoflio = () => {
@@ -36,7 +35,7 @@ const Portoflio = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
@@ -48,31 +47,38 @@ const Portoflio = () => {
             spaceBetween: 30,
           },
         }}
+        
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide className="swip">
           <img src=".\images\portfolio-01.jpg" alt="" />
-          <div
-            className="di"
-            component={motion.div}
-            initial={{ y: -200 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 0.1, type: "spring", stiffness: 50 }}
-          >
-            <h3>project ten</h3>
+          <div className="di">
+            <h3>project one</h3>
             <p>SEO Development</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swip">
           <img src=".\images\portfolio-02.jpg" alt="" />
+          <div className="di">
+            <h3>project two</h3>
+            <p>SEO Development</p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swip">
           <img src=".\images\portfolio-03.jpg" alt="" />
+          <div className="di">
+            <h3>project three</h3>
+            <p>SEO Development</p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swip">
           <img src=".\images\portfolio-04.jpg" alt="" />
+          <div className="di">
+            <h3>project four</h3>
+            <p>SEO Development</p>
+          </div>
         </SwiperSlide>
       </Swiper>
       <img
