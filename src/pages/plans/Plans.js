@@ -82,7 +82,7 @@ const Plans = () => {
                   color="text.secondary"
                   sx={{ marginBottom: "20px" }}
                 >
-                  10 Projects
+                  <span className="mark">✓</span> 10 Projects
                 </Typography>
               </div>
 
@@ -91,21 +91,21 @@ const Plans = () => {
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                100 GB space
+            <span className="mark">✓</span>   100 GB space
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                20 SEO checkups
+              <span className="mark">✓</span>  10 SEO checkups
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                Basic Support
+              <span className="mar">X</span>  Basic Support
               </Typography>
               <Button
                 component={motion.div}
@@ -159,7 +159,7 @@ const Plans = () => {
               }}
             >
               <Typography gutterBottom variant="h5">
-                Starter Plan
+                Basic Plan
               </Typography>
               <Typography
                 variant="h2"
@@ -170,7 +170,7 @@ const Plans = () => {
                   textDecoration: "line-through",
                 }}
               >
-                $190
+                $200
               </Typography>
               <Typography
                 variant="h2"
@@ -182,35 +182,35 @@ const Plans = () => {
                   fontWeight: "bold",
                 }}
               >
-                $140
+                $170
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                10 Projects
+              <span className="mark">✓</span>  10 Projects
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                100 GB space
+               <span className="mark">✓</span>  70 GB space
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                20 SEO checkups
+                <span className="mark">✓</span>15 SEO checkups
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                Basic Support
+              <span className="mar">X</span>   Basic Support
               </Typography>
               <Button
                 variant="text"
@@ -258,7 +258,7 @@ const Plans = () => {
               }}
             >
               <Typography gutterBottom variant="h5">
-                Starter Plan
+                Pro Plan
               </Typography>
               <Typography
                 variant="h2"
@@ -269,7 +269,7 @@ const Plans = () => {
                   textDecoration: "line-through",
                 }}
               >
-                $190
+                $250
               </Typography>
               <Typography
                 variant="h2"
@@ -281,35 +281,35 @@ const Plans = () => {
                   fontWeight: "bold",
                 }}
               >
-                $140
+                $200
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                10 Projects
+              <span className="mark">✓</span>  10 Projects
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                100 GB space
+              <span className="mark">✓</span>  100 GB space
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                20 SEO checkups
+              <span className="mark">✓</span>  20 SEO checkups
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
                 sx={{ marginBottom: "20px" }}
               >
-                Basic Support
+              <span className="mark">✓</span>  Basic Support
               </Typography>
               <Button
                 variant="text"
