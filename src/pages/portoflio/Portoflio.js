@@ -53,7 +53,7 @@ const Portoflio = () => {
         className="mySwiper"
       >
         <SwiperSlide className="swip">
-          <img src=".\images\portfolio-01.jpg" alt="" />
+          <img src=".\images\portfolio-02.jpg" alt="" />
           <div className="di">
             <h3>project one</h3>
             <p>SEO Development</p>
