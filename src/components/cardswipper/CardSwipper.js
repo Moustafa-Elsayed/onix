@@ -7,16 +7,15 @@ import "swiper/css/effect-cards";
 
 // import required modules
 import { EffectCards } from "swiper/modules";
-import { Autoplay } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
 
 const CardSwipper = () => {
   return (
     <div>
       <Swiper
-    
         effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards,Autoplay]}
+        modules={[EffectCards, Autoplay]}
         className="swipers"
         autoplay={{
           delay: 2500,
