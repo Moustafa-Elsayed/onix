@@ -5,7 +5,7 @@ import Banner from "../../components/banner/Banner";
 import Portoflio from "../portoflio/Portoflio";
 import Plans from "../plans/Plans";
 import Subscribe from "../subscribe/Subscribe";
-import CardSwipper from "../../components/cardswipper/CardSwipper";
+// import CardSwipper from "../../components/cardswipper/CardSwipper";
 import Footer from "../../components/footer/Footer";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
         <Services />
         <Portoflio />
         <Plans />
-        <CardSwipper />
+        {/* <CardSwipper /> */}
         <Subscribe />
       <Footer />
       </Container>
