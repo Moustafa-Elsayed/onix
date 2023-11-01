@@ -22,15 +22,21 @@ const CardSwipper = () => {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide className="swiper-slides">Slide 1</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 2</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 3</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 4</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 5</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 6</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 7</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 8</SwiperSlide>
-        <SwiperSlide className="swiper-slides">Slide 9</SwiperSlide>
+        <SwiperSlide className="swiper-slides">
+          <img src="./images/portfolio-01.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slides">
+          <img src="./images/portfolio-02.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slides">
+          <img src="./images/portfolio-03.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slides">
+          <img src="./images/portfolio-03.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slides">
+          <img src="./images/portfolio-01.jpg" alt="" />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
