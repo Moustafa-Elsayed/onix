@@ -146,11 +146,11 @@ const Header = () => {
                   "&:hover": { backgroundColor: "#03a4ed" },
                 }}
                 onClick={() => {
-                  navigate("/contact");
+                  navigate("/message");
                 }}
                 disableElevation
               >
-                Contact Us Now
+                Message Us Now
               </Button>
             </Box>
           </Box>
@@ -297,9 +297,10 @@ const Header = () => {
             onClick={() => {
               setClose("permanent");
               setOpen("none");
+              navigate("/message")
             }}
           >
-            Contact Us Now
+            Message Us Now
           </Button>
         </Box>
       </Drawer>
