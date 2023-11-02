@@ -44,7 +44,7 @@
 .portoflio .swip .di {
   position: absolute;
   bottom: -100px;
-  background-image: url("C:\Users\Mostafa\Desktop\onix\public\images\hover-bg.png");
+  background-image: url("../../../public/images/hover-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,6 +1,6 @@
 .subscribe {
   position: relative;
-  background-image: url("C:\Users\Mostafa\Desktop\onix\public\images\subscribe-bg.png");
+  background-image: url("../../../public/images/subscribe-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
