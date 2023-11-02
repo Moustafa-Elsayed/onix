@@ -16,7 +16,7 @@ const Portoflio = () => {
   }, []);
   return (
     <div className="portoflio">
-      <div className="portoflio-content" >
+      <div className="portoflio-content">
         <h2>
           Our Recent <em>Projects</em> & Case <br /> Studies
           <span>For Clients</span>
@@ -26,7 +26,6 @@ const Portoflio = () => {
       <Swiper
         slidesPerView={0}
         spaceBetween={10}
-        centeredSlides={true}
         pagination={{
           clickable: true,
         }}
@@ -36,7 +35,7 @@ const Portoflio = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
@@ -48,7 +47,6 @@ const Portoflio = () => {
             spaceBetween: 30,
           },
         }}
-        
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
