@@ -11,15 +11,15 @@ const Services = () => {
   }, []);
   return (
     <div className="services">
-      <div className="services-content" >
-        <h2 data-aos="flip-up">
+      <div className="services-content">
+        <h2>
           We <span>Provide</span> The Best <br /> Service With
           <span> Our Tools</span>
         </h2>
-          <h3 data-aos="zoom-in" >our services</h3>
-      </div> 
+        <h3>our services</h3>
+      </div>
       <ServicesSwiper />
-      
+
       <div className="slider"></div>
       <div className="image">
         <img
