@@ -57,7 +57,7 @@ const Contact = () => {
           transition={{ delay: 0.1, type: "spring", stiffness: 50 }}
           className="back-card"
           sx={{
-            maxWidth: 500,
+            maxWidth: 470,
             margin: "0 auto",
             padding: "50 5 ",
             backgroundColor: "#dee2e626",
@@ -65,7 +65,7 @@ const Contact = () => {
         >
           <CardContent>
             <form action="" onSubmit={handleSubmit}>
-              <Grid container spacing={1}>
+              <Grid container spacing={2}>
                 <Grid xs={12} sm={6} item>
                   <TextField
                     value={values.firstName}
