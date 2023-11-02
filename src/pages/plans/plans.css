@@ -29,7 +29,7 @@ margin-bottom: 20px;
 .plans .card-content{
   border-radius: 20px;
   z-index: 1111;
-  background-image: url("C:\Users\Mostafa\Desktop\onix\public\images\second-plan-bg.png");
+  background-image: url("../../../public/images/second-plan-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
