@@ -7,6 +7,7 @@ const About = () => {
   return (
     <Container maxWidth="lg">
       <Project />
+      <h1>hdjfhj</h1>
     </Container>
   );
 };
